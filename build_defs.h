@@ -3,12 +3,17 @@
  *
  *  Created on: 22 Jun 2016
  *      Author: joe
+ *  Changed by Alexander Zibin 2021-04-25 
+ *  Format is YYYYMMDD.HHMMSS
  */
 
 #ifndef BUILD_DEFS_H
 #define BUILD_DEFS_H
 
-#define VERSION_MAJOR 1
+#ifndef VERSION_MAJOR
+    #define VERSION_MAJOR 1
+#endif // VERSION_MAJOR
+
 
 // Example of __DATE__ string: "Jul 27 2012"
 //                              01234567890
@@ -114,22 +119,26 @@
 //builds a version that looks like 1.140216.2041
 const char TimestampedVersion[] =
 {
+    'V', 'E', 'R', 'a', 'z',
     VERSION_MAJOR_INIT,
     '.',
-    BUILD_DAY_CH0,
-	BUILD_DAY_CH1,
-    BUILD_MONTH_CH0,
-	BUILD_MONTH_CH1,
+    BUILD_YEAR_CH0,
+	BUILD_YEAR_CH1,
     BUILD_YEAR_CH2,
 	BUILD_YEAR_CH3,
+    BUILD_MONTH_CH0,
+	BUILD_MONTH_CH1,
+    BUILD_DAY_CH0,
+	BUILD_DAY_CH1,
     '.',
     BUILD_HOUR_CH0,
 	BUILD_HOUR_CH1,
     BUILD_MIN_CH0,
 	BUILD_MIN_CH1,
+    BUILD_SEC_CH0, 
+    BUILD_SEC_CH1,
     '\0'
 };
 
 #endif // BUILD_DEFS_H
-
 
