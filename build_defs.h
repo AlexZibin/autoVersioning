@@ -119,7 +119,7 @@
 //builds a version that looks like 1.140216.2041
 const char TimestampedVersion[] =
 {
-    'V', 'E', 'R', '.', ' ',
+    'V', 'E', 'R', '.', ' ', 7, 
     VERSION_MAJOR_INIT,
     '.',
     BUILD_YEAR_CH0,
