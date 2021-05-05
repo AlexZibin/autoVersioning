@@ -117,6 +117,7 @@
 #endif
 
 //builds a version that looks like VER. _1.YYYYMMDD.HHMMSS (VER. _1.20210509.204159)
+extern const char TimestampedVersion[];
 const char TimestampedVersion[] =
 {
     'V', 'E', 'R', '.', ' ', '_', 
@@ -140,5 +141,6 @@ const char TimestampedVersion[] =
     '\0'
 };
 
+//char *_TimestampedVersion = &TimestampedVersion;
 #endif // BUILD_DEFS_H
 
