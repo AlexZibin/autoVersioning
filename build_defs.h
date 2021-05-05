@@ -4,7 +4,7 @@
  *  Created on: 22 Jun 2016
  *      Author: joe
  *  Changed by Alexander Zibin 2021-04-25 
- *  Format is YYYYMMDD.HHMMSS
+ *  Builds a version that looks like VER. _1.YYYYMMDD.HHMMSS (VER. _1.20210509.204159)
  */
 
 #ifndef BUILD_DEFS_H
@@ -116,7 +116,7 @@
 
 #endif
 
-//builds a version that looks like 1.140216.2041
+//builds a version that looks like VER. _1.YYYYMMDD.HHMMSS (VER. _1.20210509.204159)
 const char TimestampedVersion[] =
 {
     'V', 'E', 'R', '.', ' ', '_', 
